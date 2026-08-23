@@ -1,0 +1,14 @@
+{
+  "name": "disco-images",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Image hosting for my AO3 fanfics and general fandom use, mostly Disco Elysium stuff",
+  "scripts": {
+    "deploy": "git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-vtubing:ninineen/disco-images.git"
+  },
+  "license": "UNLICENSED"
+}

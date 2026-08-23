@@ -2,31 +2,31 @@
 
 <h1 align="center">disco-images</h1>
 
-<p align="center"><i>image hosting for my fanfics, my Disco Elysium brainrot, and whatever else needs a permanent URL.</i></p>
+<p align="center"><i>image hosting for my fics and my Disco Elysium hoard.</i></p>
 
-<p align="center">ESPRIT DE CORPS [Medium: Success] — The images are here. They are safe. They are <b>versioned</b>.</p>
+<p align="center">ESPRIT DE CORPS [Medium: Success] -- The images live here now. git remembers everything.</p>
 
 ---
 
 ### 🗃️ What this is
 
-A plain, boring, beautiful image host. No build step, no app, no tracking — just a folder of pictures that GitHub serves for free, mostly so my fics don't break when some third-party host decides to sunset, paywall, or enshittify itself.
+An image host with no moving parts: files in a repo, served by GitHub for free. Mostly so my fic embeds survive the next time some third-party host dies or goes paid.
 
 Home to:
 
-* 📝 art and images embedded in my **AO3 fanfics**
-* 🪩 **Disco Elysium stuff** — screenshots, memes, reference art, the usual hoard
-* 🧺 general-purpose hosting for anything else that needs a stable link
+* 📝 images embedded in my **AO3 fanfics**
+* 🪩 **Disco Elysium stuff** -- screenshots, reference art, the usual hoard
+* 🧺 anything else that needs a stable link
 
 ### 🔗 How to use
 
-**No setup needed.** Push an image to this repo, and it's instantly hosted at:
+Push an image to this repo and it's hosted immediately:
 
 ```
 https://raw.githubusercontent.com/ninineen/disco-images/main/<path-to-image>
 ```
 
-So a file at `fic-art/harry-and-kim.jpg` in the repo becomes:
+So `fic-art/harry-and-kim.jpg` in the repo becomes:
 
 ```
 https://raw.githubusercontent.com/ninineen/disco-images/main/fic-art/harry-and-kim.jpg
@@ -38,13 +38,21 @@ and in HTML (AO3-friendly):
 <img src="https://raw.githubusercontent.com/ninineen/disco-images/main/fic-art/harry-and-kim.jpg" alt="describe your image, be kind">
 ```
 
-**Want a prettier URL? (optional)** Enable GitHub Pages — repo **Settings → Pages → Source: Deploy from a branch → `main`** — and the same file is also served at:
+**Want a prettier URL? (optional)** Turn on GitHub Pages once -- repo **Settings → Pages → Source: Deploy from a branch → `main`** -- and the same file also answers to:
 
 ```
 https://ninineen.github.io/disco-images/fic-art/harry-and-kim.jpg
 ```
 
-Both point at the same file; the raw URL works with zero config, the Pages one just looks nicer. Pick one per embed and stick with it so your fics don't rot if you ever toggle Pages off.
+Same file, two addresses. Whichever one you embed in a fic, keep using that one -- if Pages ever gets switched off, the `.github.io` links go with it.
+
+### 🚀 Deploy
+
+Pages serves `main` directly, so publishing a new image is just commit + push:
+
+```bash
+npm run deploy   # = git push
+```
 
 ---
 
@@ -66,10 +74,10 @@ I make AO3 skins and tools, write fanfic, stream on Twitch, and post fandom cont
 
 ## 📄 License
 
-© NiniNeen. The images in this repo are **all rights reserved** — they're my fanworks, screenshots, and personal art. You're welcome to link to them where I've embedded them, but please don't rehost, repost, or scrape. Not affiliated with ZA/UM.
+© NiniNeen. Everything in here is **all rights reserved** -- fanworks, screenshots, personal art. Feel free to hotlink the embeds where I've used them, but don't rehost or repost. Not affiliated with ZA/UM.
 
 ---
 
-<p align="center">💖 for every fic that deserved a picture, and every picture that deserved a home.</p>
+<p align="center">💖 for every fic that deserved a picture.</p>
 
-<sub><sup><i>HALF LIGHT [Easy: Success] — Back up your images. Back them up twice. Trust nothing.</i></sup></sub>
+<sub><sup><i>HALF LIGHT [Easy: Success] -- Back your images up twice. Trust nothing.</i></sup></sub>
